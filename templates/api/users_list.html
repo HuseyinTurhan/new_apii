@@ -1,0 +1,26 @@
+{% extends 'api/base.html'%}
+{% block content %}
+
+<div class="container my-3 p-3 text-center" style="background-color: blue; color: white;">
+<h1>Users</h1>
+</div>
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Phone</th>
+    </tr>
+{% for user in userinfo%}
+    <tr>
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+
+    </tr>
+{% endfor%}
+
+{% endblock %}

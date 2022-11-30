@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Django Base</title>
+</head>
+
+<body>
+    <nav class="container my-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link disabled" href="#"></a>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <div class="container my-3">
+        {% block content %}
+            <h1>This is inner content of base page!</h1>
+        {% endblock %}
+    </div>
+
+    <div class="container my-3 fixed-bottom">
+        <footer class="text-center bg-light">
+            <div class="container">
+            </div>
+
+            <div class="text-center p-3" style="background-color: rgba(103, 100, 100, 0.2)">
+                © 2022 Copyright
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
